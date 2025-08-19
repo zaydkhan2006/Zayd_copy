@@ -34,12 +34,12 @@ Each student will have their own file, so there should be no conflicts in this s
 
 1. Your group of 4–6 students is a **team**. Choose a unique team identifier (for example, `UNC-Alpha`, `Sharks`, `Team42`).  
 2. One person in the team acts as **Integrator** and will create the team’s base branch `team/<team-id>/base`.  
-3. The Integrator creates a new folder `teams/<team-id>/` and a file inside it called `roster.md`.  
+3. The Integrator should create a new folder `teams/<team-id>/` and a file inside it called `roster.md`.  
    - The file should begin with:  
      `# Team <team-id> Roster (alphabetical by last name)`  
      followed by a line that says `Members:`.  
 4. Within the team, split into pairs. Each pair creates their own branch from the base: `team/<team-id>/pair-<lastname1>-<lastname2>`.  
-5. Each pair edits the same line in `teams/<team-id>/roster.md`, directly under `Members:`.  
+5. Each pair should edit the same line in `teams/<team-id>/roster.md`, directly under `Members:`.  
    - Add exactly one line with the format:  
      `<Name1> + <Name2> — Team name: <chosen team name>`  
    - Every pair must insert their line at the same place, so that conflicts are guaranteed.  
@@ -49,8 +49,8 @@ Each student will have their own file, so there should be no conflicts in this s
 
 ## Part 3: Conflict Resolution and Integration
 
-1. The Integrator creates a new branch `team/<team-id>/integration` from the base.  
-2. The Integrator merges each pair branch into the integration branch, one by one.  
+1. The Integrator should create a new branch `team/<team-id>/integration` from the base.  
+2. Then, merge each pair branch into the integration branch, one by one.  
    - This will cause conflicts in the `roster.md` file.  
    - Resolve the conflicts by keeping only one `Members:` header, then making sure all lines are included.  
    - The final list of pairs must be in **alphabetical order by last name**.  
@@ -61,7 +61,7 @@ Each student will have their own file, so there should be no conflicts in this s
 
 ## Part 4: Class Roster Pull Request
 
-1. The Integrator appends the team’s final roster to the file `class-roster.md`.  
+1. The Integrator should append the team’s final roster to the file `class-roster.md`.  
    - Add a section starting with `## <team-id>` followed by the list of pairs.  
 2. Commit and push the update to the integration branch.  
 3. Open a pull request from `team/<team-id>/integration` to `main` with the title `<team-id> → class-roster`.  
