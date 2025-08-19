@@ -20,8 +20,8 @@ Welcome to our collaborative Git exercise! In this activity, you will first work
 
 1. Clone this repository to your computer.
 2. You will see folders for the morning section and the afternoon section.  Choose the appropriate folder to work in.
-3. Create a new branch named `solo/<onyen>`.  
-4. Inside the `solo/` folder, create a new text file named `<onyen>.txt`.  
+3. Create a new branch named `solo/<onyen>`. 
+4. Now navigate to the `solo/` foldoer (unrelated to branch name).  Inside it, create a new text file named `<onyen>.txt`.  
 5. Add your full name inside the file.  
 6. Stage, commit, and push your branch to GitHub.  
 7. Open a pull request from your branch to `main` with the title `solo: <onyen>`.  
