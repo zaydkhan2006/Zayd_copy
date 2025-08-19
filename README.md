@@ -81,3 +81,32 @@ Each student will have their own file, so there should be no conflicts in this s
 - `git pull --ff-only` — update your branch with the latest changes from remote.  
 - `git push -u origin <branch>` — push your branch to GitHub and set upstream.  
 - `git reset --hard origin/main` — reset your branch to match the remote main branch.  
+
+
+
+## Common Mistakes
+
+1. **Confusing branch names with folder names.**  
+Remember: `solo/{{ONYEN}}` is the branch name; `solo/` is the folder. Both are required.
+
+2. **Forgetting to pull the latest changes before branching or merging.**  
+Always run `git pull --ff-only` on `main` or your base branch to avoid diverging histories.
+
+3. **Leaving merge conflict markers in files.**  
+Always remove `<<<<<<<`, `=======`, and `>>>>>>>`. Ensure the final `roster.md` is clean and alphabetized.
+
+---
+
+## Extra Debugging Commands
+
+- `git status` — check current branch and file state.  
+- `git branch -vv` — show local branches and their remote tracking.  
+- `git diff` — show unstaged changes.  
+- `git diff --staged` — show staged but uncommitted changes.  
+- `git log --oneline --graph --decorate --all` — visualize branch history.  
+- `git reflog` — view recent HEAD movements to recover from mistakes.  
+- `git merge --abort` — cancel a merge attempt.  
+- `git restore <file>` — discard changes to a file before staging.  
+- `git reset --hard origin/main` — reset your local branch to match the remote main branch.  
+
+---
